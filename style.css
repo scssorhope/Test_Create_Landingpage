@@ -1,0 +1,260 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3.5rem;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.container:hover a {
+  color: black;
+}
+
+.navbar a {
+  color: #000;
+}
+
+.nav-item:hover a {
+  color: #aeaeae;
+}
+
+.card:hover a {
+  color: #aeaeae;
+}
+
+.navbar-brand {
+  color: #262626;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.carousel-caption {
+  padding-bottom: 250px;
+  font-family: poppins;
+}
+
+.carousel-caption h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.carousel-caption h2 span {
+  color: #aeaeae;
+}
+
+.carousel-item .animated h2 p {
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-indicators .active {
+  background-color: deepskyblue;
+  border-color: #aeaeae;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 10% auto;
+}
+
+.single-service {
+  width: 28%;
+  min-width: 250px;
+  text-align: center;
+  display: block;
+  height: 350px;
+  position: relative;
+  border-radius: 5px;
+  background: linear-gradient(to right, deepskyblue 65%, #fff 100%);
+  margin-bottom: 40%;
+  padding: 15px 10px 0 25px;
+  color: #000;
+  box-shadow: 1px 2px 1px -1px #000;
+  float: right;
+  margin: 0 30px;
+}
+
+.single-service h2 {
+  font-family: poopins;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.single-service i {
+  color: #fff;
+  font-size: 80px;
+}
+
+.effect {
+  position: relative;
+  transition: all ease 0.9s;
+}
+
+.effect::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 11px;
+  right: 19px;
+  width: 75%;
+  top: 0;
+  box-shadow: 0 15px 10px #000;
+  transform: rotate(4deg);
+  transition: all 0.9s ease-in-out;
+}
+
+.effect:hover::before {
+  transform: rotate(0);
+  bottom: 20px;
+  z-index: -10;
+}
+
+.containersosial {
+  background-color: white;
+  min-height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containersosial ul {
+  display: flex;
+}
+
+.containersosial ul li {
+  list-style-type: none;
+  margin: 0 40px;
+}
+
+.containersosial ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.containersosial ul li .fa {
+  font-size: 80px;
+  color: black;
+  line-height: 80px;
+  transition: 500ms;
+}
+
+.containersosial ul li a {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  transition: 500ms;
+  box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.containersosial ul li a:hover {
+  width: 200px;
+  height: 200px;
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.containersosial ul li:hover .fa {
+  color: #fff;
+  font-size: 140px;
+}
+
+.containersosial ul li:hover:nth-child(1) a {
+  background: #3b5999;
+}
+
+.containersosial ul li:hover:nth-child(2) a {
+  background: #55acee;
+}
+
+.containersosial ul li:hover:nth-child(3) a {
+  background: #0077bb;
+}
+
+.containersosial ul li:hover:nth-child(4) a {
+  background: linear-gradient(#400080, transparent),
+    linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+
+footer a {
+  color: #aeaeae;
+}
+
+footer a:hover {
+  color: #aeaeae;
+}
+
+footer p {
+  color: black;
+}
+
+.copy {
+  justify-content: space-between;
+}
+
+.darkmode--activated nav a {
+  color: white;
+}
+
+.darkmode--activated #about {
+  color: white;
+}
+
+.darkmode--activated hr {
+  color: white;
+}
+
+.button {
+  isolation: isolate;
+}
+
+.darkmode--activated .logo {
+  mix-blend-mode: difference;
+}
